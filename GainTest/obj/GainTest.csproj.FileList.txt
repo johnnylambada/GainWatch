@@ -1,0 +1,15 @@
+bin\Debug\GainView.exe
+bin\Debug\GainView.pdb
+bin\Debug\GainWatch.dll
+bin\Debug\ICSharpCode.SharpZipLib.dll
+bin\Debug\GainWatch.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\GainView.GainTest.resources
+obj\Debug\GainView.Properties.Resources.resources
+obj\Debug\GainTest.csproj.GenerateResource.Cache
+obj\Debug\GainView.exe
+obj\Debug\GainView.pdb
+bin\Debug\GainWatch.xml
+bin\Debug\NLog.config
+bin\Debug\NLog.dll
+bin\Debug\NLog.xml

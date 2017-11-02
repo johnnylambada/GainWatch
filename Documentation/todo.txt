@@ -1,0 +1,10 @@
+TODO
+1) Attach new trips class to position.  A class has a linked list of trips.  See the trades.xls spreadsheet for what the trips should have and calculate.
+
+2) At the end of a campaign, dump a .html file that contains the pertiant info.  Put it in c:\gainwatch\results and name it YYYY-MM-DD-HH-MM-SS.html
+
+3) move the UI logic from GWPositions to it's own class.  This will become the basis for the UI (when I get to it)
+
+4) What's left of GWPositions becomes the Campaign class.  Define what this means.
+
+5) Add ability to pull from multiple zip files at the same time and keep their time in sync

@@ -1,0 +1,104 @@
+2007-02-24 18:53:44.3750|LinuxWithin.GainWatch.Gain..ctor|Gain constructor
+2007-02-24 18:53:44.4531|LinuxWithin.GainWatch.Campaign..ctor|There will be a total of 1 iterations.
+2007-02-24 18:53:44.4843|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061114-063826.log
+2007-02-24 18:53:44.5312|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:53:44.5937|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:53:44.5937|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:53:44.5937|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:53:46.6875|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:53:46.7187|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061115-063959.log
+2007-02-24 18:53:46.7343|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:53:46.7343|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:53:46.7343|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:53:46.7500|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:53:48.5781|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:53:48.5781|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061116-010256.log
+2007-02-24 18:53:48.5937|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:53:48.6093|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:53:48.6093|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:53:48.6093|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:53:51.1875|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:53:51.1875|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061117-061457.log
+2007-02-24 18:53:51.2031|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:53:51.2031|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:53:51.2031|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:53:51.2187|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:53:53.3281|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:53:53.3281|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061119-232128.log
+2007-02-24 18:53:53.3437|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:53:53.3437|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:53:53.3437|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:53:53.3437|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:53:56.5000|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:53:56.5000|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061120-225856.log
+2007-02-24 18:53:56.5156|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:53:56.5312|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:53:56.5312|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:53:56.5312|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:53:58.9375|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:53:58.9375|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061121-234244.log
+2007-02-24 18:53:58.9687|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:53:58.9687|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:53:58.9687|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:53:58.9687|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:00.9218|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:00.9218|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061126-224431.log
+2007-02-24 18:54:00.9375|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:00.9531|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:00.9531|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:00.9531|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:04.6250|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:04.6250|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061128-011357.log
+2007-02-24 18:54:04.6562|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:04.6562|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:04.6718|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:04.6718|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:07.7656|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:07.7812|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061128-230508.log
+2007-02-24 18:54:07.7968|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:07.7968|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:07.7968|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:07.7968|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:10.6718|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:10.6718|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061130-064114.log
+2007-02-24 18:54:10.6875|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:10.7031|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:10.7031|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:10.7031|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:13.4218|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:13.4375|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061130-222441.log
+2007-02-24 18:54:13.4531|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:13.4531|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:13.4531|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:13.4687|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:16.7187|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:16.7500|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061203-225811.log
+2007-02-24 18:54:16.7812|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:16.7968|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:16.7968|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:16.7968|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:19.6406|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:19.6718|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061205-015600.log
+2007-02-24 18:54:19.6875|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:19.7031|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:19.7031|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:19.7031|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:22.4375|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:22.4531|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061205-221302.log
+2007-02-24 18:54:22.4687|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:22.4687|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:22.4687|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:22.4843|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:25.0000|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:25.0156|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061206-231236.log
+2007-02-24 18:54:25.0312|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:25.0468|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:25.0468|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:25.0468|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:27.2187|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.
+2007-02-24 18:54:27.2500|LinuxWithin.GainWatch.QuotesIBLogger..ctor|Quote Source: C:\IBLogger\YMDEC06-061208-062827.log
+2007-02-24 18:54:27.2656|LinuxWithin.GainWatch.Strategy.Load|Load(C:\GainStar\IBPriceSlope.gws)
+2007-02-24 18:54:27.2812|LinuxWithin.GainWatch.Plan.Reset|Reset(EndOfDay)
+2007-02-24 18:54:27.2812|LinuxWithin.GainWatch.Plan.Reset|Reset(Wait10)
+2007-02-24 18:54:27.2812|LinuxWithin.GainWatch.Quotes.Enable|Enable()ing the Quote engine
+2007-02-24 18:54:30.3906|LinuxWithin.GainWatch.QuotesIBLogger.Enable|Finished reading file.

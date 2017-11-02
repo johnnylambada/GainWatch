@@ -1,0 +1,184 @@
+#!/usr/bin/perl -w
+######################################################################
+# mko.ft: make a freetrade order
+######################################################################
+
+use Getopt::Long;
+use File::Basename;
+
+######################################################################
+# Parse the command line
+######################################################################
+my $verb		= basename($0);
+my $command		= "";
+my $userid		= "";
+my $userpass	= "";
+my $transid		= "";
+GetOptions(
+	"c=s"		=>	\$command,
+	"p=s"		=>	\$userpass,
+	"t=s"		=>	\$transid,
+	"u=s"		=>	\$userid,
+);
+usage("You must specifiy a command.") if ($command eq "");
+usage("You must specifiy a user id.") if ($userid eq "");
+usage("You must specifiy a user password.") if ($userpass eq "");
+
+######################################################################
+# buy
+######################################################################
+sub buy{
+	my $shares=$_[0];
+	my $equity=$_[1];
+	my $price =$_[2];
+	print "buy $shares shares of $equity at ".($price?$price:"market")."\n";
+	trade( "buy", $shares, $equity, $price );
+}
+
+######################################################################
+# cancel
+######################################################################
+sub cancel{
+	my $transid = $_[0];
+	usage("Specify a transaction id to cancel") if ($transid eq "");
+	print "cancel $transid\n";
+}
+
+######################################################################
+# sell
+######################################################################
+sub sell{
+	my $shares=$_[0];
+	my $equity=$_[1];
+	my $price =$_[2];
+	print "sell $shares shares of $equity at ".($price?$price:"market")."\n";
+	trade( "sell", $shares, $equity, $price );
+}
+
+######################################################################
+# status
+######################################################################
+sub status{
+	my $transid = $_[0];
+	usage("Specify a transaction id to status.") if ($transid eq "");
+	print "status $transid\n";
+}
+
+######################################################################
+# usage
+######################################################################
+sub usage{
+	my $error = $_[0];
+	print "usage:\n";
+	print "Buy NNN shares of equity 'eee' at price 'ppp' (or @ market)\n";
+	print "\t$verb -u user -p pass -c bNNNeee[ppp]\n";
+	print "\t\tExample: $verb -u fred -p fpass -c b100csco32.50\n\n";
+
+	print "Sell NNN shares of equity 'eee' at price 'ppp' (or @ market)\n";
+	print "\t$verb -u user -p pass -c sNNNeee[ppp]\n";
+	print "\t\tExample: $verb -u fred -p fpass -c s100csco35.50\n\n";
+
+	print "Cancel transid\n";
+	print "\t$verb -u user -p pass -t transid -c cancel\n\n";
+
+	print "Status of transid\n";
+	print "\t$verb -u user -p pass -t transid -c stat\n\n";
+
+	print "\nERROR: $error\n" if ($error ne "");
+	exit 1;
+}
+
+######################################################################
+# gocurl
+######################################################################
+sub gocurl{
+	my $doit = $_[0];
+	print "$doit\n";
+	print "-------------------------------------------------------------\n";
+	$page=`$doit`;
+	print "$page\n";
+	print "=============================================================\n";
+	print "=============================================================\n";
+	print "=============================================================\n";
+}
+
+######################################################################
+# trade
+######################################################################
+sub trade{
+	my $cmd = $_[0];
+	my $shares=$_[1];
+	my $equity=$_[2];
+	my $price =$_[3];
+
+	# Get the value for DV_DATA
+	# -------------------------
+	$page = `curl -b cookies -c cookies https://wwws.freetrade.com/apps/LogIn/ 2> /dev/null`;
+	$page =~ /DV_DATA.*VALUE="(.*)"/;
+	$DV_DATA=$1;
+
+	######################################################################
+	# Now log into Freetrade, setting the cookies
+	######################################################################
+	$url="https://wwws.freetrade.com/cgi-bin/apps/LogInMain";
+
+	$data="";
+	$data="$data -d pagehandler=PHLogIn";
+	$data="$data -d USERGROUP=ACCT";
+	$data="$data -d USERID=$userid";
+	$data="$data -d DV_DATA=$DV_DATA";
+	$data="$data -d PASSWORD=$userpass";
+	$data="$data -d logon=\"Login Now\"";
+	$data="$data -d COMPANY=FREE";
+
+	gocurl("curl $data -b cookies -c cookies -s $url");
+
+	######################################################################
+	# get the trading page (fill it in then send it)
+	######################################################################
+	$url="https://wwws.freetrade.com/cgi-bin/apps/EquityOrder";
+
+	$data="";
+	$data="$data -d mode=advanced";
+	$data="$data -d pagehandler=PHAdvancedOrderTicket";
+	$data="$data -d jsactive=true";
+	$data="$data -d special=none";
+	$data="$data -d tif=D";	#D=Day/moc=Mkt On Close/eow=End of Wk/eom=EO Month/G=GTC/gtd=Good thru Dat
+	$data="$data -d TIF_MONTH=0";
+	$data="$data -d TIF_DAY=00";
+	$data="$data -d TIF_YEAR=0";
+	$data="$data -d placeorder=\"Place Order\"";
+
+	$data="$data -d collisionid=$userid";
+	$data="$data -d action=$cmd";	#buy/sell/buy_cover/sellshort
+	$data="$data -d qty=$shares";
+	$data="$data -d symbol=$equity";
+
+	if ($price eq ""){
+		$data="$data -d terms=M";
+	} else {
+		$data="$data -d terms=L";	#S=Stop/X=Stop Limit
+	}
+	$data="$data -d limit_price=$price";
+	
+	gocurl("curl $data -b cookies -c cookies -s $url");
+}
+
+######################################################################
+# Now parse the command parameter
+######################################################################
+if		($command =~ /^b([0-9]+)([a-z]*)([0-9.]*)?$/i){
+	buy($1,$2,$3);
+} elsif	($command =~ /^s([0-9]+)([a-z]*)([0-9.]*)?$/i){
+	sell($1,$2,$3);
+} elsif	($command =~ /^cancel?$/i){
+	cancel($transid);
+} elsif	($command =~ /^stat(us)?$/i){
+	status($transid);
+} elsif	($command =~ /^test?$/i){
+#	buy(1,"msft",1.00);
+#	sell(1,"msft",2000.00);
+	die "the test function is not yet working";
+} else {
+	usage("Invalid command");
+}

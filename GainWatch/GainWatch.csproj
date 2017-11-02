@@ -1,0 +1,229 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6995C19C-9947-46B1-8466-BEA3CD2BD7ED}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>GainWatch</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GainWatch</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\GainWatch.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>3</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <Name>ICSharpCode.SharpZipLib</Name>
+      <HintPath>References\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="_running gainwatch notes.txt" />
+    <Compile Include="Action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActionChangePlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActionChangeState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActionMarketExit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActionsMisc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Broker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BrokerFreetrade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BrokerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Campaign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Condition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConditionConsistentTrend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConditionIndicatorCross.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConditionMisc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConditionPriceStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConditionStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConditionTimeOfDay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConditionWaitEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gain.cs" />
+    <Compile Include="GainWatchPositionsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IBacktest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Indicator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NotifyIconNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Position.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuotesIBLogger.cs" />
+    <Compile Include="Quotes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuotesFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuotesQT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuotesTradeStationData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuotesZip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stobj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tick.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Trip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="GainWatchPositionsWindow.resx">
+      <DependentUpon>GainWatchPositionsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

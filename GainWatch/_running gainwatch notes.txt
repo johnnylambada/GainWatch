@@ -1,0 +1,5 @@
+Some command line parameters:
+
+-u C:\GainStar\IndicatorsCross-MarketEnter-LimitExit.gwc
+
+Log file: C:\Projects\Gain\GainWatch\trunk\GainTest\bin\Debug\Gain.log

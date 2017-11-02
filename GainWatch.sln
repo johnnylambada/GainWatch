@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GainWatch", "GainWatch\GainWatch.csproj", "{6995C19C-9947-46B1-8466-BEA3CD2BD7ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GainTest", "GainTest\GainTest.csproj", "{1F3A62B9-B1D9-4802-87CE-5FB0CC94C3C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6995C19C-9947-46B1-8466-BEA3CD2BD7ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6995C19C-9947-46B1-8466-BEA3CD2BD7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6995C19C-9947-46B1-8466-BEA3CD2BD7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6995C19C-9947-46B1-8466-BEA3CD2BD7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3A62B9-B1D9-4802-87CE-5FB0CC94C3C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3A62B9-B1D9-4802-87CE-5FB0CC94C3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3A62B9-B1D9-4802-87CE-5FB0CC94C3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3A62B9-B1D9-4802-87CE-5FB0CC94C3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
